@@ -20,7 +20,7 @@ load_dotenv()
 
 # Initialize LLM with OpenRouter
 llm = ChatOpenAI(
-    model="openai/gpt-3.5-turbo",
+    model="qwen/qwen-2.5-72b-instruct",  # Free on OpenRouter!
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
     default_headers={"HTTP-Referer": "http://localhost:3000"}

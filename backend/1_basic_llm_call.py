@@ -15,7 +15,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 
-def basic_llm_call(prompt: str, model: str = "openai/gpt-3.5-turbo") -> str:
+def basic_llm_call(prompt: str, model: str = "qwen/qwen-2.5-72b-instruct") -> str:
     """
     The most fundamental LLM call - a simple HTTP POST request.
     
