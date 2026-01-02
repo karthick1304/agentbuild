@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 Multi-Agent Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">◈</span>
+                <h1>MULTI-AGENT<span class="accent">HUB</span></h1>
+            </div>
+            <div class="agents-status">
+                <span class="agent-badge scientist" title="Scientist">🔬</span>
+                <span class="agent-badge creative" title="Creative">🎨</span>
+                <span class="agent-badge coder" title="Coder">💻</span>
+            </div>
+        </header>
+
+        <!-- Chat Container -->
+        <main class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome Message -->
+                <div class="message system">
+                    <div class="message-content">
+                        <div class="welcome-text">
+                            <h2>Welcome to the Multi-Agent System</h2>
+                            <p>I'm powered by three specialized agents:</p>
+                            <div class="agent-cards">
+                                <div class="agent-card scientist">
+                                    <span class="emoji">🔬</span>
+                                    <strong>Scientist</strong>
+                                    <small>Facts & Research</small>
+                                </div>
+                                <div class="agent-card creative">
+                                    <span class="emoji">🎨</span>
+                                    <strong>Creative</strong>
+                                    <small>Stories & Poetry</small>
+                                </div>
+                                <div class="agent-card coder">
+                                    <span class="emoji">💻</span>
+                                    <strong>Coder</strong>
+                                    <small>Programming Help</small>
+                                </div>
+                            </div>
+                            <p class="hint">Ask me anything and I'll route it to the right expert!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="userInput" 
+                        placeholder="Ask me anything..."
+                        rows="1"
+                        autofocus
+                    ></textarea>
+                    <button id="sendBtn" class="send-btn" title="Send message">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="input-hint">
+                    Press <kbd>Enter</kbd> to send · <kbd>Shift+Enter</kbd> for new line
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
